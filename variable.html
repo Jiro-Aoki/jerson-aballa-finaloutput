@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+  <meta charset=”utf-8”>
+  <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+  <meta http-equiv=”x-ua-compatible” content=”ie=edge”>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Js Variables</title>
+
+ 
+</head>
+
+<body>
+  <div class="whole">
+   <div class="header">
+    <header>JavaSript Basic Topics</header>
+  </div>
+    <div class="side-bar">
+      <img src="gif2.gif">
+
+       <ul>
+          <li> <a href="index.html">Home</a></li>
+          <li> <a href="Introduction.html">Introduction</a></li>  
+          <li> <a href="DataTypes.html">Data Types</a></li>    
+          <li> <a href="variable.html">Variables</a></li> 
+          <li> <a href="conditional.html">Conditional Statement</a></li>       
+          <li> <a href="popup-boxes.html">Popup Boxes</a></li>
+          <li> <a href="Loops.html">Loops</a></li> 
+          <li> <a href="Array.html">Array</a></li> 
+          <li> <a href="ArrayMethod.html">Array Method</a></li>   
+         
+       </ul>
+    </div>
+    
+   <div class="content">
+              <h1>VARIABLES</h1>
+      <section class="var" >
+        <br>
+          What are Variables?
+              <p>&bull; Variables are containers for storing data (storing data values).</p><br>
+          There are 4 Ways to Declare a JavaScript Variable:
+             <p>&bull;  Using var</p>
+             <p>&bull;  Using let</p>
+             <p>&bull;  Using const</p>
+             <p>&bull;  Using nothing/Undeclared Variable</p><br>
+          When to Use JavaScript var?
+              <p>&bull; var keyword is used to declare a variable in JavaScript which is treated as a normal variable, but the variables declared using the let keyword are block scoped.</p>
+              <p>&bull; If you want your code to run in older browsers, you must use var.</p>   
+              <br>  
+               <img class="var-img" src="images/variables/var.png"><br>
+               <button onclick="imgVar()"> Results! </button> 
+              
+                <p> And here's what's happening in the example above:</p>
+                <p>&bull; var is the keyword that tells JavaScript you're declaring a variable.</p>
+                <p>&bull; x is the name of that variable.</p>
+                <p>&bull; = is the operator that tells JavaScript a value is coming up next.</p>
+                <p>&bull; 100 is the value for the variable to store.</p>
+                 
+              <br>
+          When to use Javascript let?
+            <p>&bull; In JavaScript, let is a keyword that is used to declare a block scoped variable.</p>
+              <p>Examples:</p><br>
+
+              <img class="var-img" src="images/variables/let.png">  <br>
+              <button onclick="imglet()">Results!</button>
+                 <p id="imglet"></p><br>
+
+
+
+           When to use Javascript const?
+              <p>&bull; Const is another keyword to declare a variable when you do not want to change the value of that variable for the whole program.</p>
+              <p>&bull; Always declare a variable with const when you know that the value should not be changed.</p>
+                <p> Examples: </p><br>  
+                <img class="var-img" src="images/variables/const.png">  <br>   
+                
+                <button onclick="conts()">Results!</button>
+                 <p id="const-bttn"></p><br>
+
+
+      </section>
+    </div>
+
+     <script src="script.js"></script>
+     <script type="text/javascript">
+       function imgVar() {
+        let x = 100 ;
+        alert(x);
+
+        }
+
+  function imglet(){
+    let x = 2;
+    alert(x);
+
+    }
+
+    function conts(){
+    const x = 16;
+     alert(x);
+     }
+
+     </script>
+  
+    
+  </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+  <meta charset=”utf-8”>
+  <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+  <meta http-equiv=”x-ua-compatible” content=”ie=edge”>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Js Array Method</title>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+  <div class="whole">
+   <div class="header">
+    <header>JavaSript Basic Topics</header>
+  </div>
+    <div class="side-bar">
+      <img src="gif2.gif">
+       <ul>
+          <li> <a href="index.html">Home</a></li>
+          <li> <a href="Introduction.html">Introduction</a></li>  
+          <li> <a href="DataTypes.html">Data Types</a></li>    
+          <li> <a href="variable.html">Variables</a></li>      
+          <li> <a href="conditional.html">Conditional Statement</a></li>   
+          <li> <a href="popup-boxes.html">Popup Boxes</a></li>   
+          <li> <a href="Loops.html">Loops</a></li> 
+          <li> <a href="Array.html">Array</a></li>
+          <li> <a href="ArrayMethod.html">Array Method</a></li>
+         
+       </ul>
+    </div>
+    
+   <div class="content">
+              <h1> Array Method</h1>
+      <section class="ArrMthod" >
+        <br>
+        <p>Arrays provide a lot of methods. To make things easier</p>
+        <br>
+        <p></p>
+        <b><i>1. push( )</i></b>
+            <p>This method adds one or more elements to the end of array and returns the new length of the array.</p><br>
+                 <img src="images/ArrayMethod/push.png"><br>
+                  <button onclick="Push()">Try it!</button><br>
+                  <p id="Push"></p>
+
+         <b><i>2. pop( )</i></b>
+            <p>This method removes the last element from the end of array and returns that element.</p><br>
+                   <img src="images/ArrayMethod/pop.png"><br>
+                  <button onclick="pop()">Try it!</button><br><br>
+
+
+
+         <b><i>3. shift( )</i></b>
+            <p>This method removes the first element from an array and returns that element.</p> <br>
+                     <img src="images/ArrayMethod/shift.png"><br>
+                      <button onclick="shift()">Try it!</button><br><br>
+
+          <b><i>4. unshift( )</i></b>
+            <p>This method adds one or more elements to the beginning of an array and returns the new length of the array.</p><br>
+                   <img src="images/ArrayMethod/unshift.png"><br>
+                    <button onclick="unshift()">Try it!</button><br><br><br>
+
+        <div class="arr-example"> 
+            <p class="p-arrmthod">Click button to see example of combined Array Method.</p><br>
+                <button><a href="https://jiro-aoki.github.io/jiro-array-method/">Click here!</a></button><br><br>
+        </div> 
+
+      </section>
+
+      
+    </div>
+    <script type="text/javascript">
+        function Push(){
+            const fruit =["Apple", "Peach"];
+            console.log(fruit.push("Banana"));
+            console.log(fruit);
+        }
+
+        function pop(){
+            const fruit =["Apple", "Peach"];
+            fruit.pop();
+            console.log(fruit);
+        }
+
+        function shift(){
+             const fruit =["Apple", "Peach"];
+             fruit.shift();
+             console.log(fruit);
+        }
+        
+        function unshift(){
+           const fruit = ["Apple", "Peach"]; 
+           console.log(fruit.unshift("Banana")); 
+           console.log(fruit); 
+        }
+
+
+    </script>
+    
+    
+  </div>
+</body>
+</html>

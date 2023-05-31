@@ -1,0 +1,145 @@
+  <!DOCTYPE html>
+<html lang=”en”>
+<head>
+  <meta charset=”utf-8”>
+  <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+  <meta http-equiv=”x-ua-compatible” content=”ie=edge”>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Conditional Statement</title>
+  
+</head>
+
+<body>
+  <div class="whole">
+   <div class="header">
+    <header>JavaSript Basic Topics</header>
+  </div>
+    <div class="side-bar">
+      <img src="gif2.gif">
+       <ul>
+          <li> <a href="index.html">Home</a></li>
+          <li> <a href="Introduction.html">Introduction</a></li>  
+          <li> <a href="DataTypes.html">Data Types</a></li>    
+          <li> <a href="variable.html">Variables</a></li>    
+          <li> <a href="conditional.html">Conditional Statement</a></li>      
+          <li> <a href="popup-boxes.html">Popup Boxes</a></li>          
+          <li> <a href="Loops.html">Loops</a></li>
+          <li> <a href="Array.html">Array</a></li>
+           <li> <a href="ArrayMethod.html">Array Method</a></li>
+
+       </ul>
+    </div>
+    
+   <div class="content">
+              <h1> CONDITIONAL STATEMENT</h1>
+      <section class="section-1" >
+        <br>
+        
+        Connditional Statement
+          
+        <p> &bull; Conditional statements control behavior in JavaScript and determine whether or not pieces of code can run.</p><br> 
+
+            <p> There are multiple different types of conditionals in JavaScript including:</p>
+
+            <p>“If” statements: where if a condition is true it is used to specify execution for a block of code. </p>
+            <p>“Else” statements: where if the same condition is false it specifies the execution for a block of code. </p>
+            <p>“Else if” statements: this specifies a new test if the first condition is false. </p><br>  
+
+        If Statement Example
+            <p>As the most common type of conditional, the if statement only runs if the condition enclosed in parentheses ().</p>
+            <img src="images/conditional-statement/if-statement.png ">
+             <button onclick="Ifstmnt()">Results!</button><br>
+            
+
+          <p> Here’s what’s happening in the example above:</p> 
+
+          <p> &bull; The keyword if tells JavaScript to start the conditional statement.</p>
+          <p> &bull; (10 > 5) is the condition to test, which in this case is true — 10 is greater than 5. </p>
+          <p> &bull; The part contained inside curly braces {} is the block of code to run. </p>
+          <p> &bull; Because the condition passes, the variable outcome is assigned the value "if block". </p><br> 
+
+        Else Statement Example
+        <p> You can extend an if statement with an else statement, which adds another block to run when the if conditional doesn’t pass.</p>
+              <img src="images/conditional-statement/else-statement.png ">
+              <button onclick="elsestatement()">Results!</button><br>
+
+        <p> In the example above, "cat" and "dog" are not equal, so the else block runs and the variable outcome gets the value "else block".</p><br> 
+
+        Else If Statement Example
+        <p> You can also extend an if statement with an else if statement, which adds another conditional with its own block.</p>
+             <img src="images/conditional-statement/else-if.png "><br>
+              <button onclick="elseif()">Results!</button><br>
+
+
+            <p> You can use multiple if else conditionals, but note that only the first else if block runs. JavaScript skips any remaining conditionals after it runs the first one that passes.</p>
+            <img src="images/conditional-statement/else-if-cont..png "><br>
+             <button onclick="elseif2()">Results!</button><br>
+
+
+
+
+
+          <br>  <br>  
+               
+
+         
+
+        
+      </section>
+
+      
+    </div>
+   
+    <script type="text/javascript">
+      function Ifstmnt(){
+        if(10 > 5){
+        let outcome = "If Block" ; 
+
+        alert(outcome);
+      }
+    }
+
+    function elsestatement(){
+      if("cat" == "dog"){
+        alert("if block");
+      }
+
+      else{
+        alert("else block");
+      }
+    }
+
+    function elseif(){
+        if(false){
+          alert("if block");
+        }
+        else if(true){
+          alert("else if block");
+        }
+
+        else{
+          alert("else block")
+        }
+      }
+
+      function elseif2(){
+        if(false){
+          alert("if block");
+        }
+        else if(true){
+          alert("First else if block");
+        }
+        else if(true){
+          alert("Second else if block");
+        }
+        else{
+          alert("else block")
+        }
+      }
+
+    </script>
+
+    
+  </div>
+</body>
+</html>

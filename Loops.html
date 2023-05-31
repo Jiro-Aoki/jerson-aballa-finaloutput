@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+  <meta charset=”utf-8”>
+  <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+  <meta http-equiv=”x-ua-compatible” content=”ie=edge”>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Js Loops</title>
+  <script type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body>
+  <div class="whole">
+   <div class="header">
+    <header>JavaSript Basic Topics</header>
+  </div>
+    <div class="side-bar">
+      <img src="gif2.gif">
+       <ul>
+          <li> <a href="index.html">Home</a></li>
+          <li> <a href="Introduction.html">Introduction</a></li>  
+          <li> <a href="DataTypes.html">Data Types</a></li>    
+          <li> <a href="variable.html">Variables</a></li>      
+          <li> <a href="conditional.html">Conditional Statement</a></li> 
+          <li> <a href="popup-boxes.html">Popup Boxes</a></li>
+          <li> <a href="Loops.html">Loops</a></li>
+          <li> <a href="Array.html">Array</a></li>
+          <li> <a href="ArrayMethod.html">Array Method</a></li>
+
+
+         
+       </ul>
+    </div>
+    
+   <div class="content">
+              <h1> Loops</h1>
+      <section class="Loops" >
+        <br>
+ 
+        What is JavaScript Loop?
+          <p>&bull; <i>Loop</i> is a JavaScript control statement which executes blocks of code repeatedly. <b>A code block or block of code is a code between {and}.</b> </p>
+          <br>
+        There are four types of loops in JavaScript.
+           <p> &bull; for loop</p>
+           <p> &bull; while loop</p>
+           <p> &bull; do-while loop</p><br>
+
+        1). JavaScript For loop
+        <p>The <b>JavaScript for loop</b> iterates the elements for the fixed number of times. It should be used if number of iteration is known. <br>The syntax of for loop is given below:</p><br>
+          <img class="loop-img" src="images/Loops/forloops.png">  <br><br>
+
+        <p>Let’s see the simple example of for loop in javascript: </p><br>
+          <img class="loop-img" src="images/Loops/forloopsexamp.png">  <br>
+          <button onclick="bttnforloops()">Try it!</button><br><br>
+        
+
+
+      
+        2). JavaScript while loop
+        <p>The <b>JavaScript while loop</b> iterates the elements for the infinite number of times. It should be used if number of iteration is not known. The syntax of while loop is given below.</p><br>
+             <img class="loop-img" src="images/Loops/whileloops.png">  <br><br>
+
+            <p>Let’s see the simple example of while loop in javascript: </p><br>
+              <img class="loop-img" src="images/Loops/whileloopsexamp.png"><br>
+              <button onclick="bttnwhileloops()">Try it!</button><br><br>
+
+        3). JavaScript do while loop
+        <p>The <b>JavaScript do while loop</b> iterates the elements for the infinite number of times like while loop. But, code is executed at least once whether condition is true or false. The syntax of do while loop is given below.</p><br>
+               <img class="loop-img" src="images/Loops/dowhile.png">  <br><br>
+
+           <p>Let’s see the simple example of do while loop in javascript: </p><br>
+            <img class="loop-img" src="images/Loops/dowhileexample.png">  <br>
+              <button onclick="dowhile()">Try it!</button><br><br>
+                                       
+      </section>
+
+      
+    </div>
+   
+    <script type="text/javascript">
+      function bttnforloops(){
+      for (i = 1; i<=5; i++){
+        console.log(i + "br/>");
+        }
+      }
+
+      function bttnwhileloops(){
+        let 1 = 0;
+        while(i < 5){
+          console.log(i); i++;
+        }
+      }
+
+      function dowhile(){
+      let count = 0;
+      do {
+        console.log(count);
+        count++;
+        }
+      while 
+        (count < 5)
+
+      }
+
+
+    </script>
+    
+  </div>
+</body>
+</html>

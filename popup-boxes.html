@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+  <meta charset=”utf-8”>
+  <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+  <meta http-equiv=”x-ua-compatible” content=”ie=edge”>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+  <title>Js Pop Boxes</title>
+
+
+</head>
+
+<body>
+  <div class="whole">
+   <div class="header">
+    <header>JavaSript Basic Topics</header>
+  </div>
+    <div class="side-bar">
+      <img src="gif2.gif">
+       <ul>
+         <li> <a href="index.html">Home</a></li>
+          <li> <a href="Introduction.html">Introduction</a></li>  
+          <li> <a href="DataTypes.html">Data Types</a></li>    
+          <li> <a href="variable.html">Variables</a></li>      
+          <li> <a href="conditional.html">Conditional Statement</a></li> 
+          <li> <a href="popup-boxes.html">Popup Boxes</a></li>   
+          <li> <a href="Loops.html">Loops</a></li> 
+          <li> <a href="Array.html">Array</a></li>
+          <li> <a href="ArrayMethod.html">Array Method</a></li>
+
+         
+       </ul>
+    </div>
+    
+   <div class="content">
+              <h1> POPUP BOXES</h1>
+      <section class="section-1" >
+        <br>
+     
+        In JavaScript there are 3 types of popup boxes.
+          <p>&bull; Alert box</p>
+          <p>&bull; Confirm box</p>
+          <p>&bull; Prompt box</p><br>
+        Alert Box
+          <p>&bull; <i>Alert box</i> is a dialog box which displays a message in a small window with an OK button, it is used, and when we want to make sure the information is coming via user.</p>
+          <p>&bull; User have to click to OK button to proceed.</p><br>
+
+          <p>Example:</p>
+            <img src="images/Popup Boxes/alert.png">
+            <button onclick="myalert()">Results!</button><br>
+            <p id="myalert"> </p>
+          <br>  
+        Confirm Box
+          <p>&bull; <i>Confirm box</i> is a dialog box which displays a message in a small window with two buttons. One OK and other Cancel.</p>
+          <p>&bull; It is used when we want the user to confirm/verify something.</p>
+          <p>&bull; When user clicks OK the box returns true else when user clicks Cancel the box returns false.</p><br>
+
+            <p>Example:</p>
+            <img src="images/Popup Boxes/confirm.png">
+            <button onclick="myconfirm()">Results!</button><br>
+            <p id="myconfirm"> </p><br>
+        Prompt Box
+          <p>&bull; <i>Prompt box</i> is a dialog box which displays a message in a small window with a text box along with two buttons. One OK and other Cancel.</p>
+          <p>&bull; It is used when we want the user to input a value before proceeding ahead. When a user clicks OK the box returns the input value else when user clicks Cancel the box return null</p>
+
+          <p>Example:</p>
+            <img src="images/Popup Boxes/prompt.png">
+            <button onclick="myprompt()">Results!</button><br>
+            <p id="myprompt"></p><br>
+                
+      </section>
+
+      
+    </div>
+   <script type="text/javascript">
+      function myalert(){
+        alert("Hit me to proceed!");
+        var alrt = "Have a nice day!!"
+          document.getElementById("myalert").innerHTML = alrt;
+      }
+
+
+     function myconfirm() {
+        a = confirm("Want to proceed?");
+          document.getElementById("myconfirm").innerHTML = ("You have click on: ")+ a;
+      }
+
+      function myprompt() {
+          a = prompt("Enter your name: ");
+          document.getElementById("myprompt").innerHTML = ("You have entered: ") + a;
+      }
+
+   </script>
+
+  </div>
+</body>
+</html>
